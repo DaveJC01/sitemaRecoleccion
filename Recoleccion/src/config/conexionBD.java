@@ -13,7 +13,7 @@ import javax.swing.JTextField;
  */
 public class conexionBD {
    
-        Connection conecta = null;
+        Connection conecta;
      
         
         String user = "root";
@@ -43,6 +43,10 @@ public class conexionBD {
        } 
 
     public void insertarRegistro(JTextField txtCuenta, JTextField txtNombre, JTextField txtAdp, JTextField txtService, JTextField txtPantalla, JTextField txtTeclado, JTextField txtMouse, JTextField txtHeandsets, JTextField txtCableRed, JTextField txtCableVideo, JTextField txtCableRed0, JTextField txtTeclado0, JTextField txtMouse0, JTextField txtCuenta0, JTextField txtService0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Connection getConnection() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
        
