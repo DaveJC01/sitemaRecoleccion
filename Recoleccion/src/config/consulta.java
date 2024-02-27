@@ -4,9 +4,12 @@
  */
 package config;
 
+
+import java.sql.*;
 import java.sql.CallableStatement;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
 
 /**
  *
@@ -148,8 +151,9 @@ public class consulta {
     public void setObservacion(String observacion) {
         this.observacion = observacion;
     }
-    
-    public void limpiar( JTextField txtCuenta,
+    //Limpiar las celdas despues de guardar los datos 
+    public void limpiar( 
+            JTextField txtCuenta,
             JTextField txtNombre,
             JTextField txtAdp,
             JTextField txtService,
@@ -182,6 +186,9 @@ public class consulta {
                 txtCosto.setText("");
                 txtObservacion.setText("");
     }
+    
+    
+    
     
     public void insertarRegistro(
             JTextField txtCuenta,
@@ -264,8 +271,5 @@ public class consulta {
         }
 }
     
-    public void fecha(){
-        
-    }
-    
+   
 }
