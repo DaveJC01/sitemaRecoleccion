@@ -264,4 +264,8 @@ public class consulta {
         }
 }
     
+    public void fecha(){
+        
+    }
+    
 }
