@@ -14,6 +14,7 @@ public class Usuarios {
     private String usuario;
     private String password;
     private String nombre;
+    private String tipoNombre;
     private int idTipo;
 
     public int getId() {
@@ -54,6 +55,14 @@ public class Usuarios {
 
     public void setIdTipo(int idTipo) {
         this.idTipo = idTipo;
+    }
+
+    public String getTipoNombre() {
+        return tipoNombre;
+    }
+
+    public void setTipoNombre(String tipoNombre) {
+        this.tipoNombre = tipoNombre;
     }
     
     

@@ -9,15 +9,11 @@ import config.Usuarios;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author admin_aeraz002
- */
-public class login extends JFrame {
 
-    /**
-     * Creates new form Inicio
-     */
+public class login extends JFrame {
+    
+
+   
     public login() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -140,7 +136,7 @@ public class login extends JFrame {
 
             if (modSql.login(mod)) {
                 this.dispose();
-                Home frmHome = new Home();
+                Home frmHome = new Home(mod);
                 frmHome.setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "Datos incorrectos");

@@ -39,7 +39,7 @@ public class SQLUsuarios extends Conexion {
         ResultSet rs = null;
         Connection con = EstableConexion();
 
-        String sql = "SELECT id, usuario, password, nombre, idTipo FROM usuarios WHERE usuario = ? ";
+        String sql = "SELECT u.id, u.usuario, u.password, u.nombre, u.idTipo, t.nombre FROM usuarios AS u INNER JOIN tipousurio AS t ON u.idTipo = t.id WHERE usuario = ?";
 
         try {
             ps = con.prepareStatement(sql);
@@ -52,6 +52,7 @@ public class SQLUsuarios extends Conexion {
                     usr.setId(rs.getInt(1));
                     usr.setNombre(rs.getString(4));
                     usr.setIdTipo(5);
+                    usr.setTipoNombre(rs.getString(6));
                     return true;
                 } else {
                     return false;
